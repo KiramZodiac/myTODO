@@ -25,7 +25,7 @@ btn.addEventListener('click', () => {
     // li.setAttribute('contentEditable', true)
   
 
-    if (inputValue === "") {
+    if (inputValue.trim() === "") {
     alert('Input cannot Be empty')
     } else {
         
@@ -39,10 +39,6 @@ btn.addEventListener('click', () => {
     storedTodos();
 
 }
-
-   
-
-
 })
 
 
