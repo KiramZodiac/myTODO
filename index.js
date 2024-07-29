@@ -40,28 +40,35 @@ btn.addEventListener('click', () => {
 
 }
 
-delBtn.addEventListener('click',(e)=> {
-     let userRes = confirm('are you sure you wnt to delete this To do?')
-    if (e.target.tagName === "BUTTON" && userRes) {
-    e.target.parentElement.remove()
-    } 
-    storedTodos();
-    
-})
    
 
 
 })
+
+
+
+
 
 
 //delete to do from the list and from the local storage function.
-toDos.addEventListener('click',(e) => {
-    
+
+document.getElementById("toDos").addEventListener('click', (e) => {
+    if (e.target.classList.contains('delBtn')) {
+        let userRes = confirm('Are you sure you want to delete this To Do?'); 
+        if (userRes) {
+            e.target.parentElement.remove()
+           
+           
+            storedTodos()
+        }
+
+    }
+})    
 
    
 
     
-})
+
 const clearAll = document.getElementById('clearAll');
 
 clearAll.addEventListener('click', () => {
