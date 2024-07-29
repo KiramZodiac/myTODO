@@ -1,0 +1,67 @@
+
+body{
+    background-color: aquamarine;
+}
+
+.all{
+
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    
+    padding-top: 200px;
+    
+
+}
+
+.toDo{
+    display: flex;
+    
+
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+  
+    
+}
+.list{
+
+
+
+
+}
+
+input{
+height: auto;
+width:auto;
+line-height: normal;
+
+}
+.delBtn:hover{
+color: red;
+
+
+
+}
+
+
+.li{
+background-color: aliceblue;
+width: 80%;
+    word-break: break-word;
+    white-space: normal;
+    border: 1px solid #000;
+  
+    padding: 10px;
+
+    margin: 10px auto;
+    list-style: none;
+
+}
+.time{
+
+    font-family: Arial, sans-serif;
+        font-size: 1.2em;
+        color: #333;
+}
